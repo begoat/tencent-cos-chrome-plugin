@@ -64,6 +64,7 @@ module.exports = {
   },
   devServer: {
     writeToDisk: true,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -95,7 +96,10 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname, './public/manifest.json'), to: path.resolve(__dirname, './build') },
+        {
+          from: path.resolve(__dirname, './public/manifest.json'),
+          to: path.resolve(__dirname, './build'),
+        },
       ],
     }),
   ],
