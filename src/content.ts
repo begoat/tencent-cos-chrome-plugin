@@ -1,2 +1,2 @@
 let ttt = {};
-console.log(ttt);
+console.log('ttt', ttt);

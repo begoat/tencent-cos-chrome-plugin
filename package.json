@@ -39,6 +39,8 @@
     "@types/jest": "25.2.2",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "2.7.0",
     "@typescript-eslint/parser": "2.7.0",
     "babel-loader": "^8.1.0",
@@ -71,13 +73,10 @@
     "mini-css-extract-plugin": "^0.9.0",
     "ncp": "^2.0.0",
     "prettier": "2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
     "react-test-renderer": "^16.13.1",
     "regenerator-runtime": "^0.13.5",
     "rimraf": "^3.0.2",
-    "rsuite": "^4.5.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "ts-jest": "25.5.1",
@@ -98,14 +97,18 @@
       "pre-commit": "npm run lint"
     }
   },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
-    "rsuite": ">=4.0.0"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "ie >= 10"
-  ]
+  ],
+  "dependencies": {
+    "cos-js-sdk-v5": "^0.5.26",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "rsuite": "^4.5.0"
+  }
 }

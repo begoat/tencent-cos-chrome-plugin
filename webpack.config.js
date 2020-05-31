@@ -9,7 +9,7 @@ var pkg = require('./package');
 /* eslint-enable */
 
 var __DEV__ = process.env.NODE_ENV === 'development';
-var filename = __DEV__ ? '[name].js' : '[name].min.js';
+var filename = __DEV__ ? '[name].js' : '[name].js';
 
 module.exports = {
   entry: {
