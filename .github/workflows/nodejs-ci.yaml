@@ -23,9 +23,9 @@ jobs:
     - name: test
       run: yarn --frozen-lockfile && yarn run test
 
-    - name: build blogs
+    - name: build
       if: ${{ matrix.node-version == '10.x' }}
-      run: git config --global user.email "hylbegoat@gmail.com" && git config --global user.name "begoat" &&  yarn run deploy
+      run: git config --global user.email "hylbegoat@gmail.com" && git config --global user.name "begoat" && yarn run build && yarn run deploy
       # https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token
       # we don't need manually create a developer token ourself because it generated automatically and will expire automatically
       env:
