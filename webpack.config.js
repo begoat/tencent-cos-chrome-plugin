@@ -63,7 +63,7 @@ module.exports = {
     ],
   },
   devServer: {
-    writeToDisk: true,
+    writeToDisk: false,
     historyApiFallback: true,
   },
   plugins: [
