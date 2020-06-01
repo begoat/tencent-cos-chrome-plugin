@@ -6,6 +6,7 @@ var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 var CopyPlugin = require('copy-webpack-plugin');
 var pkg = require('./package');
+var webpack = require('webpack');
 /* eslint-enable */
 
 var __DEV__ = process.env.NODE_ENV === 'development';
@@ -105,6 +106,9 @@ module.exports = {
           to: path.resolve(__dirname, './build'),
         },
       ],
+    }),
+    new webpack.DefinePlugin({
+      SUBPATH: JSON.stringify(process.env.SUBPATH),
     }),
   ],
   ...(!__DEV__ && {

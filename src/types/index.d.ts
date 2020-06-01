@@ -5,3 +5,5 @@ declare module '*.svg' {
 }
 
 type ArrayElement<A> = A extends readonly (infer T)[] ? T : never;
+
+declare const SUBPATH: string | undefined;

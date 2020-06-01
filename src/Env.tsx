@@ -34,7 +34,7 @@ export const Env = (): JSX.Element => {
   const handleSubmit = useCallback(() => {
     Alert.success('Env info Saved');
     setEnvInfo(formData);
-    location.replace('/');
+    location.replace(SUBPATH ? SUBPATH : '/');
   }, [formData]);
 
   const handleReset = useCallback(() => {
