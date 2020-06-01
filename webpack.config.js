@@ -100,6 +100,10 @@ module.exports = {
           from: path.resolve(__dirname, './public/manifest.json'),
           to: path.resolve(__dirname, './build'),
         },
+        {
+          from: path.resolve(__dirname, './public/icon_108.png'),
+          to: path.resolve(__dirname, './build'),
+        },
       ],
     }),
   ],
