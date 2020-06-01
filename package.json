@@ -12,7 +12,7 @@
     "lint:fix": "eslint -c .eslintrc.js --no-eslintrc --ext .ts,.tsx --fix src",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://$GITHUB_PAT@github.com/begoat/tencent-cos-chrome-plugin.git"
   },
   "repository": {
     "type": "git",
